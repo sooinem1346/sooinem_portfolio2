@@ -1,0 +1,677 @@
+
+body {
+    margin:0 auto;
+    line-height: 150%;
+    letter-spacing: -0.38px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #222;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #222;
+    margin-top: 79px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #3a3a3a;
+    line-height: 150%;
+}
+
+
+/* header */
+
+
+header {
+    background: #010102;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 80px;
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+div.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+div.menu-container h1.logo a {
+    width: 70px;
+    height: 16px;
+}
+
+div.menu-container button {
+    background: #010102;
+}
+
+nav ul.gnb{
+    display: flex;
+    gap: 35px;
+}
+
+nav ul.gnb li{
+    font-weight: 600;
+}
+
+nav ul.gnb li a{
+    color: #fff;
+}
+
+.user-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.user-menu a {
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 섹션 1 */
+
+.main-visual.swiper {
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.swiper-pagination :nth-child(1) span{
+    width: 10px;
+    height: 10px;
+    opacity: 25%;
+    border-radius: 5px;
+    position: absolute;
+    color: #222;
+}
+
+.main-visual .swiper-slide h1 {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+
+}
+.main-visual .swiper-slide p {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.main-visual .swiper-slide-active h1 {
+    opacity: 1;
+    transform: translateY(-100px);
+}
+
+.main-visual .swiper-slide-active p {
+    transform: translateY(-100px);
+    opacity: 1;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    /* border: 1px solid #000; */
+}
+
+section.main-visual.swiper .swiper-wrapper {
+    display: flex;
+}
+
+.main-visual.swiper .swiper-slide {
+    width: 640px;
+    height: 100vh;
+}
+
+.swiper-slide h1{
+    line-height: 140%;
+    margin-left: 40px;
+    position: absolute;
+    bottom: 245px;
+    z-index: 1;
+}
+
+.main-visual.swiper .swiper-slide p{
+    color: #fafafa;
+    position: absolute;
+    bottom: 176px;
+    margin-left: 40px;
+    z-index: 1;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 카테고리 */
+
+section.category {
+height: 348px;
+padding: 78px;
+}
+
+ul.cate.inner {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.cate.inner li{
+    width: 135px;
+    height: 192px;
+    text-align: center;
+}
+
+ul.cate.inner li p {
+    line-height: 100%;
+    margin-top: 19px;
+    color: #222;
+}
+
+.th-small.all{
+    background: rgba(180, 180, 180, 0.2);
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.th-small.new{
+    background: rgba(180, 180, 180, 0.2);
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li .th-small {
+    width: 135px;
+    height: 135px;
+    overflow: hidden;
+}
+
+li .th-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 배너 시작 */
+
+
+section.promotion-banner {
+    width: 100%;
+    padding: 10px 31px 60px;
+    display: flex;
+}
+
+.banner {
+    width: 50%;
+    height: 335px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img:hover {
+    transform: scale(1.2);
+}
+
+.banner h1 a {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 24px;
+    color: #222222;
+    z-index: 2;
+    text-decoration: underline;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+
+/* 섹션 2 */
+
+section.pick {
+    height: 832px;
+    padding: 110px 0;
+}
+
+.inner {
+    width: 1104px;
+    margin: 0 auto;
+}
+
+.inner h1 {
+    text-align: center;
+}
+
+.inner h3 {
+    text-align: center;
+    margin: 24px 0 73px;
+}
+
+ul.pick-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.th-medium {
+    width: 351px;
+    height: 351px;
+    position: relative;
+}
+
+li .th-medium span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #979797;
+    position: absolute;
+    border-radius: 20px 0 20px 0;
+}
+
+li .th-medium p {
+    position: absolute;
+    z-index: 999;
+    font-weight: 600;
+    font-size: 20px;
+    top: 12px;
+    left: 18px;
+}
+
+li .th-medium img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.pick-list p {
+    color: #222;
+}
+
+p.name {
+    margin: 21px 0 9px;
+}
+
+p.cost {
+    color: #B3B3B3;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+p.price {
+    display: flex;
+    gap: 15px;
+}
+
+/* 섹션 3 시작 (뷰티 총결산) */
+
+section.beauty-report {
+    height: 1335px;
+    padding-top: 127px;
+}
+
+.beauty-report h1, .beauty-report h3 {
+    text-align: center;
+}
+
+.beauty-report h3 {
+    margin: 21px 0 62px;
+}
+
+.pick-list li {
+    position: relative;
+
+}
+
+.report-list li {
+    position: relative;
+}
+
+.heart-svg svg {
+    position: absolute;
+    width: 25px;
+    fill: none;
+    stroke: #e22f2f;
+    stroke-width: 2;
+    cursor: pointer;
+    bottom: 25px;
+    left: 120px;
+}
+
+.heart-svg.active svg {
+    fill: #e22f2f;
+}
+
+ul.report-list.inner {
+    display: flex;
+    gap: 24px ;
+    flex-wrap: wrap;
+}
+
+.th-medium:hover {
+    transform: scale(1.1);
+}
+
+/* 섹션 4 공식몰 단독구성 */
+
+section.official-only {
+    height: 1200px;
+    padding: 127px 0 94px;
+}
+
+.official-only h1 {
+    text-align: center;
+}
+
+.official-only h3 {
+    margin: 21px 0 100px;
+    text-align: center;
+}
+
+.only-container {
+    background: #f8f8f8;
+    height: 835px;
+    padding: 28px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navigation button.prev {
+    background: url(images/prev.svg);
+    position: absolute;
+    top: 50%;
+    left: 58px;
+}
+
+.navigation button.next {
+    background: url(images/next.svg);
+    position: absolute;
+    top: 50%;
+    right: 58px;
+}
+
+.only-slider {
+    width: 1421px;
+    margin: 0 auto;    
+    /* border: 5px solid #000; */
+
+}
+
+.only-slider .swiper-wrapper {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.only-slider .swiper-slide {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.th-big img {
+    border-radius: 20px;
+}
+
+ul.only-list li {
+    width: 700px;
+    background: #FFFFFF;
+    display: flex;
+    gap: 6px;
+}
+
+.th-big {
+    width: 322px;
+    height: 338px;
+    margin: 22px;
+}
+
+.th-big img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p.option {
+    color: #848484;
+    margin: 16px 0 62px;
+}
+
+p.prd-cost {
+    color: #B3B3B3;
+    margin-bottom: 5px;
+    text-decoration-line: line-through;
+}
+
+p.prd-price {
+    display: flex;
+    gap: 15px;
+}
+
+.content {
+    position: relative;
+}
+
+div.cart {
+    position: absolute;
+    width: 30px;
+    bottom: 70px;
+    right: 0px;
+}
+
+div.cart img {
+    width: 100%;
+}
+
+.content .heart-svg svg {
+    position: absolute;
+    width: 25px;
+    fill: none;
+    stroke: #e22f2f;
+    stroke-width: 2;
+    cursor: pointer;
+    bottom: 80px;
+    right: 0px;
+}
+
+.heart-svg.active svg {
+    fill: #e22f2f;
+}
+
+/* 섹션 콜라보 */
+
+section.collabo{
+    padding-top: 120px;
+}
+
+section.collabo h1, section.collabo h3 {
+    text-align: center;
+}
+
+section.collabo > h3 {
+    margin: 21px 0 45px;
+}
+
+.swiper.soft-slider {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    color: #fff;
+}
+
+.soft-navigation button.prev {
+    position: absolute;
+    top: 50%;
+    left: 58px;
+}
+
+.soft-navigation button.next {
+    position: absolute;
+    top: 50%;
+    right: 58px;
+}
+
+@keyframes soft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.swiper.soft-slider .swiper-wrapper{
+    display: flex;
+    animation: soft 20s linear infinite;
+}
+
+.soft-slider .swiper-slide {
+    width: 882px;
+    height: 280px;
+}
+
+.soft-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.th-huge {
+    display: flex;
+}
+
+.th-item {
+    position: relative;   /* 핵심 */
+    width: 50%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.th-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+  /* 텍스트 기본 상태 (숨김) */
+.th-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.th-text a {
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+  /* hover 효과 */
+.th-item:hover img {
+    filter: blur(7px);
+    transform: scale(1.05); /* 선택 */
+}
+
+.th-item:hover .th-text {
+    opacity: 1;
+}
+
+.collabo .inner {
+    margin: 80px auto 80px;
+}
+
+.collabo .inner h1 {
+    font-weight: 700;
+    text-align-last: left;
+}
+
+.collabo .inner h3 {
+    line-height: 150%;
+    margin: 41px 0 78px;
+    text-align-last: left;
+}
+
+.collabo .inner a {
+    color: #3a3a3a;
+    font-size: 22px;
+    line-height: 100%;
+    text-decoration: underline;
+}
+
+/* 푸터 */
+
+footer {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-link {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #EDEDED;
+}
+.footer-link a {
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #000;
+}
+
+.sns-link {
+    display: flex;
+    gap: 63px;
+    justify-content: center;
+    margin: 43px 0 43px;
+}
+footer p {
+    color: #6B6B6B;
+}
